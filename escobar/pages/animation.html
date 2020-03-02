@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>animation escobar</title>
+	</head>
+	<body>
+		<div id="blackScreen" class="grand">
+			
+		</div>
+	</body>
+</html>
+<style type="text/css">
+	body {
+		font-family: "8bit";
+		margin: 0px;
+		padding: 0px;
+	}
+	@font-face {
+		font-family: "8bit";
+		src: url("../polices/8-bit.ttf");
+		font-weight: normal;
+		font-style: normal;
+	}
+	#blackScreen {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+	}
+	.grand {
+		font-size: 43px;
+	}
+</style>
+<script type="text/javascript">
+	var texte = ["2010", "In Russia", "An order was created", "An order...", "... created for kill...", "... with alcohol !?", "They want to ...", "... resurrect USSR."];
+	var count = 0;
+	function badass() {
+		document.getElementById("blackScreen").textContent = texte[count];
+		count++;
+		if(count == texte.length + 1) {
+			clearInterval(montimer);
+			location.href = "../index.html";
+		}
+	}
+	badass();
+	montimer = window.setInterval("badass()", 2500);
+</script>

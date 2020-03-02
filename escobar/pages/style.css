@@ -1,0 +1,196 @@
+@font-face {
+	font-family: "8bit";
+	src: url("../polices/8-bit.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+html {
+	overflow: hidden;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "8bit";
+	user-select: none;
+	background-size: 120%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+a, img {
+	cursor: pointer;
+}
+a, p, li, div, span {
+	font-size: 43px;
+}
+a:hover, input[type="button"]:hover {
+	background-color: rgba(0, 0, 0, 0);
+}
+button {
+	font-size: 35px;
+	border: solid rgba(255, 20, 20, 0.9) 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: "8bit";
+	padding: 15px;
+}
+#sauvegarde {
+	display: none;
+}
+#mainScreen {
+	background-size: 100%;
+}
+#mainMenu {
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	padding: 15px;
+	background-color: rgba(220, 220, 220, 1);
+	position: fixed;
+	overflow: scroll;
+	top: 0px;
+	left: 0px;
+}
+#contentMainMenu {
+	position: relative;
+	margin-top: 40px;
+	bottom: 20px;
+}
+@keyframes slideUp {
+	from {
+		top: 1900px;
+	}
+	to {
+		top: 0px;
+	}
+}
+@keyframes slideDown {
+	from {
+		top: 0px;
+	}
+	to {
+		top: 1900px;
+	}
+}
+.animMainMenu {
+	animation-name: slideUp;
+	animation-duration: 0.5s;
+}
+.downMainMenu {
+	animation-name: slideDown;
+	animation-duration: 0.5s;
+
+}
+#buttons {
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding-right: 20px;
+}
+#enBas {
+	align-items: center;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 98%;
+	padding-left: 20px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+.proposition {
+	padding: 20px;
+	position: relative;
+	right: 15px;
+	background-color: rgba(0, 0, 0, 0);
+}
+.proposition:focus {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.coutEtAchat {
+	display: flex;
+	justify-content: space-between;
+}
+#retourContent {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: rgb(230, 230, 230);
+	z-index: 7675754789;
+	padding-left: 20px;
+}
+#moneyRetour {
+	position: relative;
+	right: 40px;
+}
+#moneyBox {
+	position: fixed;
+	width: 350px;
+	top: -50px;
+	right: 0px;
+	padding: 15px;
+	padding-left: 30px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-bottom-left-radius: 10px;
+	text-align: right;
+}
+.buttonJeux {
+	padding-right: 40px;
+	padding-left: 40px;
+}
+#parentTutoBox {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+#tutoBox {
+	background-color: black;
+	display: flex;
+	position: relative;
+	top: 0px;
+	width: 80%;
+	z-index: 8798709809880880798;
+}
+#imageTuto {
+	width: 150px;
+	height: 180px;
+}
+#texteTuto {
+	display: block;
+	color: white;
+	position: relative;
+	left: 20px;
+	bottom: 35px;
+}
+#boost, #choiceBox {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100%;
+	width: 100%;
+	color: white;
+	z-index: 8798709809880880798;
+}
+#boostChild, #choiceChild {
+	width: 100%;
+	height: 25%;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+button

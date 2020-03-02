@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content=" width=device-width, initial-scale=0.40, maximum-scale=0.40" />
+		<title>Esco bar</title>
+		<link rel="stylesheet" type="text/css" href="pages/style.css"/>
+	</head>
+	<body>
+		<p id="moneyBox"></p>
+		<div id="mainScreen">
+
+			<div id="buttons">
+				<div id="enBas">
+					<a onclick="mettreMainMenu('piece', 'btn')" class="buttonJeux">
+						piece
+					</a>
+					<a onclick="mettreMainMenu('achat', 'btn')" class="buttonJeux">
+						buy
+					</a>
+					<a onclick="" class="buttonJeux">
+						autres
+					</a>
+				</div>
+			</div>
+			
+			<div id="images">
+				
+			</div>
+
+			<div id="mainMenu" style="display: none;">
+				
+			</div>
+		</div>
+		<div id="boost" style="display: none;">
+			<div id="boostChild">
+				<div style="display: flex; justify-content: center;">
+					<img src="images/staline.png" id="boostImg" style="width: 175px; height: 210px;">
+				</div>
+				<h3 id="Name" style="margin: 10px;">Hitler</h3>
+				<p id="caracteristique" style="font-size: 25px; padding-left: 100px; padding-right: 100px; text-align: center;">-5€ sur les constructions, + 5 multiplicateur de mps</p>
+			</div>
+		</div>
+		<div id="choiceBox" style="display: none;">
+			<div id="choiceChild">
+				<h5 id="question" style="text-align: center; width: 90%;"></h5>
+				<div style="display: flex; justify-content: center;">
+					<button id="choix1"></button>
+					<button id="choix2"></button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<div id="sauvegarde">
+		<!-- Cette div ne sera pas afficher à l'écran et ses valeurs seront récupéré en DOM automatiquement pour load la game. ces valeurs sont celles du début du jeu. -->
+		<p id="money">2</p>
+		<p id="moneyParSeconde">0</p>
+		<p id="famous">0</p>
+		<p id="nombreDeClient">1</p>
+		<p id="dernierBatimentDebloque">bar</p>
+		<p id="firstTime">true</p>
+	</div>
+	<!--<audio autoplay="true" src="" loop="true"/>-->
+</html>
+
+<script type="text/javascript" src="pages/script.js"></script>
